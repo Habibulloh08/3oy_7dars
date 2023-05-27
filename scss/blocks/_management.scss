@@ -1,0 +1,56 @@
+.management {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #ffff;
+  .container {
+    @include container();
+    .management-blocks {
+      display: flex;
+      justify-content: space-between;
+      .management-blocks_card1 {
+        margin-top: 10px;
+        p {
+          @include text2();
+          width: 80%;
+        }
+        h2 {
+          @include h2();
+          margin-bottom: 100px;
+        }
+        .management-blocks_card1__title1 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .management {
+    width: 100%;
+    .container {
+      width: 100%;
+      .management-blocks {
+        display: flex;
+        flex-direction: column-reverse;
+        &_card2 {
+          text-align: center;
+        }
+        &_card2 img {
+          width: 369px;
+        }
+        .management-blocks_card1__title {
+          h2 {
+            margin-bottom: 10px;
+            text-align: justify;
+          }
+          .management-blocks_card1__title1 {
+            display: block;
+            margin-bottom: 20px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.collaborativ{
+    margin: 0 auto;
+    padding-top: 20px;
+    .container{
+        @include container();
+        .collaborativ-blocks{
+            display: flex;
+            justify-content: space-between;
+            &_card1{
+                h4{
+                    @include text();
+                }
+                h2 {
+                    @include h2();
+                  }
+                  p {
+                    @include text2();
+                  }
+                  &__subtitle{
+                    h4{
+                        @include text(); 
+                    }
+                  }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+  .collaborativ{
+    .container {
+        width: 100%;
+        .collaborativ-blocks {
+          flex-direction: column-reverse;
+          &_card2 img {
+            width: 369px;
+            margin-bottom: 20px;
+          }
+          &_card1 {
+            h2 {
+              font-size: 22px;
+            }
+            h4 {
+              font-size: 16px;
+            }
+            p {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 26px;
+              color: #22343d;
+            }
+        }
+    }
+}
+}
+  }
+        
+        

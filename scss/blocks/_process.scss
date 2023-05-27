@@ -1,0 +1,188 @@
+.process {
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: linear-gradient(
+    179.59deg,
+    #ededed 0.35%,
+    rgba(255, 255, 255, 0.0001) 75.63%
+  );
+  .container {
+    @include container();
+
+    .process-title {
+      text-align: center;
+      h2 {
+        @include h2();
+      }
+      p {
+        @include text2();
+      }
+    }
+    .process-blocks {
+      display: flex;
+      justify-content: space-between;
+      .process-blocks_card1 {
+        cursor: pointer;
+        &__content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .content-p {
+            width: 274px;
+            height: 53px;
+            background: #ffffff;
+            box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+            border-radius: 26.5px;
+            position: relative;
+          }
+          p {
+            padding-top: 10px;
+            padding-left: 30px;
+            @include text();
+          }
+          .content-p_radius {
+            position: absolute;
+            left: 25px;
+            top: 43px;
+            z-index: 1;
+            width: 17px;
+            height: 17px;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+          }
+        }
+        &__content2 {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          gap: 20px;
+          // background-color:red;
+          .content2-p {
+            width: 274px;
+            height: 53px;
+            background: #ffffff;
+            box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+            border-radius: 26.5px;
+            position: relative;
+            text-align: center;
+          }
+          p {
+            padding-top: 10px;
+            // padding-left: 20px;
+            @include text();
+          }
+          .content2-p_radius {
+            position: absolute;
+            right: 50px;
+            top: 43px;
+            z-index: 1;
+            width: 17px;
+            height: 17px;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+          }
+        }
+      }
+      .process-blocks_card2 {
+        cursor: pointer;
+        &__content {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          flex-direction: row-reverse;
+
+          .content-p {
+            width: 274px;
+            height: 53px;
+            background: #ffffff;
+            box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+            border-radius: 26.5px;
+            position: relative;
+          }
+          p {
+            padding-top: 10px;
+            padding-left: 30px;
+            @include text();
+          }
+          .content-p_radius {
+            position: absolute;
+            left: 25px;
+            top: 43px;
+            z-index: 1;
+            width: 17px;
+            height: 17px;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+          }
+        }
+        &__content2 {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          // background-color:red;
+          .content2-p {
+            width: 274px;
+            height: 53px;
+            background: #ffffff;
+            box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+            border-radius: 26.5px;
+            position: relative;
+            text-align: center;
+          }
+          p {
+            padding-top: 10px;
+            // padding-left: 20px;
+            @include text();
+          }
+          .content2-p_radius {
+            position: absolute;
+            right: 50px;
+            top: 43px;
+            z-index: 1;
+            width: 17px;
+            height: 17px;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .process-button {
+      margin-top: 20px;
+      text-align: center;
+      &_btn {
+        @include btn();
+        width: 216px;
+        height: 53px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .process {
+    width: 100%;
+    .container {
+      width: 100%;
+      .process-title {
+        h2 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .process-blocks {
+        flex-direction: column;
+        margin-top: 20px;
+        .process-blocks_card2 {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}
