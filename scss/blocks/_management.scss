@@ -39,7 +39,9 @@
         &_card2 img {
           width: 369px;
         }
-        .management-blocks_card1__title {
+        .management-blocks_card1 {
+          margin-left: 22px;
+          letter-spacing: 1.4px;
           h2 {
             margin-bottom: 10px;
             text-align: justify;
@@ -48,7 +50,12 @@
             display: block;
             margin-bottom: 20px;
             text-align: justify;
+            letter-spacing: 1px;
+
           }
+        }
+        .management-blocks_card1__subtitle{
+          margin-bottom: 50px;
         }
       }
     }

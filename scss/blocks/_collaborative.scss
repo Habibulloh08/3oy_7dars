@@ -15,6 +15,7 @@
                   }
                   p {
                     @include text2();
+                    font-size: 16px
                   }
                   &__subtitle{
                     h4{
@@ -27,6 +28,7 @@
 }
 @media screen and (max-width:500px){
   .collaborativ{
+    width: 100%;
     .container {
         width: 100%;
         .collaborativ-blocks {
@@ -36,18 +38,20 @@
             margin-bottom: 20px;
           }
           &_card1 {
+            margin-left: 22px;
             h2 {
-              font-size: 22px;
+              font-size: 25px;
             }
             h4 {
-              font-size: 16px;
+              font-size: 14px;
             }
             p {
               font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
-              font-size: 15px;
+              font-size: 14px;
               line-height: 26px;
+              // letter-spacing: 2px;
               color: #22343d;
             }
         }

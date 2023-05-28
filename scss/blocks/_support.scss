@@ -42,23 +42,30 @@
       .support-blocks {
         flex-direction: column;
         &_card1 img {
-          width: 369px;
+          width: 370px;
           margin-bottom: 20px;
         }
         &_card2 {
+          margin-left: 22px;
           h2 {
             font-size: 22px;
           }
           h4 {
             font-size: 14px;
+            
           }
           p {
             font-family: "Poppins";
             font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 26px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 25px;
             color: #22343d;
+            letter-spacing: 0.8px;
+          }
+          .support-blocks_card2__list{
+            // font-size: 10px;
+            // color:red;
           }
         }
       }
